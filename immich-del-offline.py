@@ -1,17 +1,7 @@
 #!/usr/bin/env python3
 
-# http://10.0.1.3:2283
 # pip install wheel requests
 # Note: you might need to run "pip install halo tabulate tqdm" if these dependencies are missing on your machine
-
-# admin API Key
-# KejK6k3fy4yiY8yAyvCmf6HDQYU70GXVtWcjvN8bzE
-
-#owner's key
-# IufgTVAPysasnNzeHoyoLVi7TH6wOCLmVSpMVdXLrUY
-
-# protocol and port
-# http://10.0.1.3:2283
 
 import argparse
 import json
@@ -39,7 +29,7 @@ def filter_entities(response_json, entity_type):
 
 def main():
     args = parse_arguments()
-    owner_api_key = "IufgTVAPysasnNzeHoyoLVi7TH6wOCLmVSpMVdXLrUY"
+    owner_api_key = "<OWNER API KEY>"
     try:
         if args.apikey:
             api_key = args.apikey
