@@ -7,13 +7,13 @@ i=0
 find="/usr/src/app/upload/"
 
 # local script path to immich files
-replace="mnt/pond/media/Photos/Immich/"
+replace="local/path/to/Immich/files/"
 
 # path to untracked.txt exported from immich repair page
-untracked="/home/nuthanael/Documents/untracked.txt"
+untracked="/path/to/untracked.txt"
 
 # path to which files should be moved
-destination="/mnt/pond/media/Photos/for review/"
+destination="/path/to/destination/"
 
 IFS=$'\n'                         ## split only on newlines
 for line in $(cat "$untracked")
