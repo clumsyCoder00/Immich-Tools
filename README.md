@@ -1,7 +1,7 @@
 # Immich-Tools
 A couple of tools to fill in the gaps of published tools to manage offline and untracked files in Immich.
 
-immich-del-oofline.py
+#immich-del-oofline.py
 - script to delete offline files, copied from [Remove Offline Files [Community]](https://immich.app/docs/guides/remove-offline-files/), modified to remove offiline files not owned by admin.
 - Dependencies
 -   I needed to install the following dependencies using:
