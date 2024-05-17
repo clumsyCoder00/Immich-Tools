@@ -29,13 +29,14 @@ def filter_entities(response_json, entity_type):
 
 def main():
     args = parse_arguments()
-    owner_api_key = "<OWNER API KEY>"
     try:
         if args.apikey:
             api_key = args.apikey
         else:
-            api_key = input('Enter the Immich API key: ')
-
+            api_key = input('\nEnter the Admin API key (to collect offline assets): ')
+        
+        owner_api_key = input('\nEnter the User API key (to delete offline assets)\n(This key must be generated while logged in as the account to which the offline assets belong): ')
+        
         if args.immichaddress:
             immich_server = args.immichaddress
         else:
